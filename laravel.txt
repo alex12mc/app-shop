@@ -1,0 +1,52 @@
+php artisan serve
+php artisan make:controller TestController
+php artisan make:auth
+php artisan migrate
+git remote add origin http://rutagithub
+git push origin master
+
+assets: css/js
+.blade.php plantillas
+
+yield declarar seccion
+
+ {{ csrf_field() }} token peticiones post
+
+ {{ url('register') }}
+
+php artisan make:model
+php artisan make:migration
+
+php artisan make model -m
+
+php artisan migrate:rollback regresar la ultima migracion
+php artisan migrate:reset todas las migraciones
+
+Eloquent ORM(Object Relational Mapping)
+
+Seeder alimentar tablas con informacion inicial
+php artisan make:seeder UsersTableSeeder crear seeders
+app-shop>php artisan db::seed
+
+php artisan make:factory ProductFactory crear factory
+
+php artisan migrate:refresh --seed rollback a migraciones y ejecuta seeders
+
+compact crea array asociativo
+
+php artisan tinker consola para escribir codigo php
+$products = App\Product::all(); 
+App\Product::first();
+App\Product::count();
+use App\Product;
+use App\Category;
+Product:where('category_id',1)->count();
+
+crear relaciones en los modelos
+
+$p->images->count();
+
+<!--{{ method_field('DELETE') }}-->
+
+Modelos y uso de Eloquent
+https://richos.gitbooks.io/laravel-5/content/capitulos/chapter7.html
